@@ -6,6 +6,16 @@ body {
   background-attachment: fixed;
 }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: black;
+   text-align: center;
+}
+
 .icons{
   max-width: 24px;
 }
