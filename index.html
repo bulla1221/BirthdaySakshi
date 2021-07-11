@@ -5,13 +5,14 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-    <body style="overflow-x: hidden ;">
+    <body onload="myFunction()" style="overflow-x: hidden ;">
         <div>
             <canvas id=c></canvas>
         </div>
         <div>
             <div>
-                <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" class="card">
+                <div 
+                  id="card1" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" class="card">
                   <div class="back"></div>
                     <div class="front">
                       <div class="imgset">
@@ -39,6 +40,17 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
           AOS.init();
+          function myFunction() {
+            setTimeout(function(){
+              document.getElementById('card1').scrollIntoView({
+                behavior: 'smooth'
+              });
+            }, 12000);
+          }
+
+          function scrollToCard(){
+                      
+            }
         </script>
     </body>
-</html>
+</html> 
